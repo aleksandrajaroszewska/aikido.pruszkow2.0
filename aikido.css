@@ -1,0 +1,506 @@
+
+
+body {
+ background-color:black;  
+ font-family: 'Asap', sans-serif;
+ color:#e5e5eb;
+  margin:0 auto;
+ padding:0;
+  
+ 
+}
+
+section {
+    
+    
+}
+.topParalax {
+	
+	background-image:url(images/94896306-E830-4E1B-8293-13AE5EE7DF57.JPG);
+   
+    
+}
+
+.middleParalax {
+	
+	background-image:url(images/Ola_glowne.jpg);
+}
+
+.bottomParalax {
+	
+	
+	background-image:url(images/kciuki.jpg);
+}
+
+.footerParalax {
+    
+    background-image: url(images/pad.jpg)
+}
+
+.topParalax, .middleParalax, .bottomParalax, .footerParalax{
+	
+	
+    height: 25em;
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+
+
+.home {
+   
+  height:100vh;
+   background-image: url(images/Rafal_glowne.jpg); 
+    background-position:center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+   
+}
+
+.home::after {
+    content: "";
+    background-color:#817f9f;
+    width: 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    
+    z-index: 10; }
+
+.home nav {
+    
+    width:100%;
+    height:3em;
+  
+    position:fixed;
+    top:0;
+    
+    z-index:50;
+    
+    
+}
+
+nav ul {
+    width:100%;
+    height:4em;
+     background-color:#020027;
+    display:flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content:center;
+    padding:1em;
+    padding-bottom:0;
+    padding-top:0;
+    margin-top:0;
+  
+    
+}
+
+ .logoWca {
+    
+    height:80px; 
+    background-color:white;
+    border-radius:48%;
+    padding:3px;
+    
+    
+}
+
+.logoLink {
+    
+    margin-right:3%;
+}
+
+nav ul li  {
+    
+    height:0.85em;
+  
+    background-color:black;
+   
+   
+    margin:1em;
+    margin-top:0.5em;
+    text-align:center;
+    padding:0.9em;
+    text-transform:uppercase;
+    border-radius:3px;
+    list-style-type: none;
+     z-index:100;   
+-webkit-box-shadow: 1px 1px 9px 2px rgba(229,229,235,0.61);
+-moz-box-shadow: 1px 1px 9px 2px rgba(229,229,235,0.61);
+box-shadow: 1px 1px 9px 2px rgba(229,229,235,0.61);
+}
+
+nav ul li:hover {
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(141,9,0,1);
+-moz-box-shadow: 0px 0px 10px 4px rgba(141,9,0,1);
+box-shadow: 0px 0px 10px 4px rgba(141,9,0,1);
+    
+}
+
+nav ul li a {
+    
+     
+    text-decoration:none;
+    font-weight:bold;
+    color:#e5e5eb;
+    padding-left:0;
+}
+
+.invite {
+    position:absolute;
+    width:40%;
+    padding:1em;
+    margin-top:8%;
+    margin-left:40%;
+    float:left;
+   
+    z-index:20;
+    
+}
+.invite h1 {
+     font-family: 'Gentium Book Basic', serif;
+    color:#8d0900;
+    font-size:2.8rem;
+    text-align:center;
+    width:100%;
+    text-transform:uppercase;
+    margin-bottom:0;
+}
+
+.invite p {
+    font-size:1.5rem;
+    color:black;
+    width:100%;
+    text-align:center;
+    font-weight:100;
+     margin-top:0;
+}  
+
+
+
+.classes {
+    
+    
+    height:60%;
+    width:100%;
+    text-align:center;
+    margin-top:3em;
+     
+   
+}
+
+.classes h4 {
+     color:#8d0900;
+    font-size:1.8rem;
+    margin:0;
+}
+
+
+
+.youngest {
+    
+    padding-top:1em;
+}
+ .logoK {
+    margin-left:90%;
+   
+}
+
+.aikido, .white {
+	height:80vh; 
+	display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    color:white;
+    
+}
+
+.white {
+   
+   background-color:#FFFFFF;
+   color:#0A1612;
+    
+}
+
+.about {
+    
+    width:33%;
+    display:flex;
+    flex-direction:column;
+  
+    margin:1em;
+    padding:0.5em;
+    line-height: 1.5;
+  
+}
+
+.about.dark {
+}
+
+
+ b {
+     color:#8d0900;
+}
+
+.about.bright {
+    }
+
+.about h3 {
+    
+    font-size:1.8rem;
+    margin-bottom:0;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+.about p {
+    font-size:1.2rem;
+    
+}
+
+.master {
+    color:#020027;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.instructors {
+	
+	height:80vh; 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+
+
+
+.box {
+    
+    display:flex;
+    flex-direction:column;
+     width:40%;
+     height:80%;
+     align-items:center;
+    
+     
+}
+
+.box h3 {
+    font-size:1.4rem;
+    text-transform: uppercase;
+      
+    
+}
+.box p {
+    text-align: center;
+    font-size:1.1rem;
+   
+    
+}
+.instructors .box .us {
+    
+    width:90%;
+    
+    
+    
+}
+
+
+
+
+
+
+.photos {
+    
+    display:flex; 
+    height:70vh;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;  
+   
+}
+
+.cover {
+    
+    width:20%;
+     height:40%;
+    background-size: cover;
+    background-position:center;
+    cursor:pointer;
+    margin:1em;
+              
+}
+
+
+
+.group {
+    
+	display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+    height:45em;
+    width:100%;
+    background-color:#020027;
+    z-index:50;
+    position:relative;	
+}
+ 
+
+
+.cover.one {
+    
+    background-image: url(images/dzieci/seiza.jpg);
+}
+.cover.two {
+    background-image: url(images/senoundo.jpg);
+}
+.cover.three {
+    background-image: url(images/_DSC6829.JPG);
+}
+
+.cover h3 {
+    
+   
+    font-size:2em;
+    margin-top:-2em;
+    text-align:left;
+    text-transform:uppercase;
+    
+}
+
+
+
+.slider img {
+  width:5em;
+  height:4em;
+  margin-top:36em;
+  
+  cursor: pointer;
+
+}
+
+.slider img:hover {
+    
+   -ms-transform: scale(1.3, 1.3); /* IE 9 */
+    -webkit-transform: scale(1.3, 1.3); /* Safari */
+    transform: scale(1.3, 1.3);
+    
+    
+}
+
+#gallery {
+
+	
+}
+
+
+#photo img {
+	position:absolute;
+    top:5em;
+    left:20%;
+    width:60%;
+    height:60%;
+    z-index:60;
+}
+
+.hidden {
+    display:none;
+    
+}
+
+
+.close {
+    
+    width:100%;
+    color:white;
+    cursor:pointer;
+    height:1em;
+    font-size:1em;
+    padding:0.7em;
+    text-transform:uppercase;
+    text-align:center;
+    z-index:60;
+}
+
+
+.contact {
+    background-color:#020027;
+    padding:2em;
+    
+    height:40vh;
+   
+    color:white;
+    font-size:28px;
+}
+.adres {
+    float:left;
+    width:50%;
+}
+iframe {
+    float:left;
+    width:50%;
+}
+
+@media all  and (max-width:800px) {
+    
+    .invite {
+        width:100%;
+        margin-left:0;
+    }
+    
+    .logoK {
+        margin-left:10%;
+    }
+    
+    .aikido, .white {
+        height:150vh;
+    }
+   
+    .about {
+        width:100%;
+       
+    }
+    nav ul li {
+        display:none;
+    }
+    
+    .instructors {
+        height:200vh;
+        flex-direction: column;       
+        
+
+    }
+     .box {
+        width:60%;
+        height:40%
+    }
+    .photos {
+        height:220vh;
+    }
+    .contact {
+        height:40vh;
+    }
+}
+
+
+
+
+
