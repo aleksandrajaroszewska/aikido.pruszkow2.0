@@ -2,11 +2,11 @@ $(document).ready(function(){
     
    
    
-    var newPhoto = new Image();
+    var newPhoto = new Image(); 
     newPhoto.src="images/kopniecie.jpg";
     var oldPhoto = $('#swapRafal').attr('src');
     
-      $("#swapRafal").hover(
+      $("#swapRafal").hover( // funkcja podmieniająca zdjęcia
           
           function(){
           $(this).attr('src', newPhoto.src);
@@ -32,41 +32,113 @@ $(document).ready(function(){
     
     });
     
+    
+    // funkcjomowanie okładek albumów
+    
     $(".one").click(function(){
        $(".cover").fadeOut();   
        $(".kids").removeClass("hidden");
        $(".photos").find(".close").removeClass("hidden");
     });
      
+     $(".two").click(function(){
+       $(".cover").fadeOut();   
+       $(".adults").removeClass("hidden");
+       $(".photos").find(".close").removeClass("hidden");
+    });
+     $(".three").click(function(){
+       $(".cover").fadeOut();   
+       $(".stages").removeClass("hidden");
+       $(".photos").find(".close").removeClass("hidden");
+    });
+     $(".four").click(function(){
+       $(".cover").fadeOut();   
+       $(".shows").removeClass("hidden");
+       $(".photos").find(".close").removeClass("hidden");
+    });
    
-    
-    $('#gallery img').each(function(i) {
+    //Galeria dzieci
+    $('.gallery img').each(function(i) {
 	var imgFile = $(this).attr('src');
 	var preloadImage = new Image();
-	
 		
-	
-});
-	
-
-$('#gallery a').click(function(evt){
-    
-    evt.preventDefault();
-    var imgPath = $(this).attr('href');
-    var oldImage = $('#photo img');
-    var newImage = $('<img src="' + imgPath +'">');
-    newImage.hide();
-    $('#photo').prepend(newImage);
-    newImage.fadeIn(1000);
-    oldImage.fadeOut(1000, function() {
-        $(this).remove();
     });
-});
+	
+   
+   $('.kidsGallery a').click(function(evt){
     
-$('gallery a:first').click();
+      evt.preventDefault();
+      var imgPath = $(this).attr('href');
+      var oldImage = $('#photo img');
+      var newImage = $('<img src="' + imgPath +'">');
+      newImage.hide();
+      $('#photo').prepend(newImage);
+      newImage.fadeIn(1000);
+      oldImage.fadeOut(1000, function() {
+          $(this).remove();
+      });
+    });
+    
+    $('.kidsGallery a:first').click();
     
     
+     // galeria dorośli
+       
+  
+      $('.adultsGallery a').click(function(evt){
     
+      evt.preventDefault();
+      var imgPath = $(this).attr('href');
+      var oldImage = $('#photo2 img');
+      var newImage = $('<img src="' + imgPath +'">');
+      newImage.hide();
+      $('#photo2').prepend(newImage);
+      newImage.fadeIn(1000);
+      oldImage.fadeOut(1000, function() {
+          $(this).remove();
+      });
+    });
+    
+    $('.adultsGallery a:first').click();
+    
+    // galeria Staże i obozy
+    
+     $('.stagesGallery a').click(function(evt){
+    
+      evt.preventDefault();
+      var imgPath = $(this).attr('href');
+      var oldImage = $('#photo3 img');
+      var newImage = $('<img src="' + imgPath +'">');
+      newImage.hide();
+      $('#photo3').prepend(newImage);
+      newImage.fadeIn(1000);
+      oldImage.fadeOut(1000, function() {
+          $(this).remove();
+      });
+    });
+    
+    $('.stagesGallery a:first').click();
+    
+    
+    // galeria Pokazy
+    
+     $('.showsGallery a').click(function(evt){
+    
+      evt.preventDefault();
+      var imgPath = $(this).attr('href');
+      var oldImage = $('#photo4 img');
+      var newImage = $('<img src="' + imgPath +'">');
+      newImage.hide();
+      $('#photo4').prepend(newImage);
+      newImage.fadeIn(1000);
+      oldImage.fadeOut(1000, function() {
+          $(this).remove();
+      });
+    });
+    
+    $('.showsGallery a:first').click();
+    
+    // powrót do okładek albumów
   $(".photos").find(".close").click(function(){
         
          $(this).addClass("hidden");

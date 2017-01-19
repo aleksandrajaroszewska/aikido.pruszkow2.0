@@ -16,28 +16,32 @@ section {
 }
 .topParalax {
 	
-	background-image:url(images/94896306-E830-4E1B-8293-13AE5EE7DF57.JPG);
+	background-image:url(images/paralax/aikido_20141209_80522.JPG);
    
     
 }
 
 .middleParalax {
 	
-	background-image:url(images/Ola_glowne.jpg);
+	background-image:url(images/paralax/kciuki.jpg);
+}
+
+.betweenParalax {
+    background-image: url(images/paralax/pad.jpg)
 }
 
 .bottomParalax {
 	
 	
-	background-image:url(images/kciuki.jpg);
+	background-image:url(images/paralax/futariDori.jpg);
 }
 
 .footerParalax {
     
-    background-image: url(images/pad.jpg)
+    background-image: url(images/paralax/piatka.jpg)
 }
 
-.topParalax, .middleParalax, .bottomParalax, .footerParalax{
+.topParalax, .middleParalax, .bottomParalax, .footerParalax, .betweenParalax {
 	
 	
     height: 25em;
@@ -373,7 +377,11 @@ nav ul li a {
     background-image: url(images/senoundo.jpg);
 }
 .cover.three {
-    background-image: url(images/_DSC6829.JPG);
+    background-image: url(images/40lecie_ekipaPruszkow.jpg);
+}
+
+.cover.four {
+    background-image: url(images/_DSC6829.JPG)
 }
 
 .cover h3 {
@@ -412,12 +420,12 @@ nav ul li a {
 }
 
 
-#photo img {
+#photo img, #photo2 img, #photo3 img, #photo4 img  {
 	position:absolute;
     top:5em;
     left:20%;
-    width:60%;
-    height:60%;
+    width:45em;
+    height:30em;
     z-index:60;
 }
 
