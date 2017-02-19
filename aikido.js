@@ -1,7 +1,56 @@
+
+
+
+
+
 $(document).ready(function(){
     
+    /*var  mn = $("#menu");
+    mns = "main-nav-scrolled";
+    hdr = 0;
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});*/
+    
+   function stickyMenu(){
+     var nav = $("#menu");
+     var navOffsetFromTop = nav.position().top;
+    $(window).on("scroll", function(event){
+         event.preventDefault();
+         if($(window).scrollTop() > navOffsetFromTop) {
+         nav.addClass("sticky");
+         } else {     
+         nav.removeClass("sticky");    }   
+       });
+   }
+   stickyMenu();
+    
    
-   
+   $("#menu").find('.link').on('click', function(e) {
+    e.preventDefault();
+    $link = $(this).attr('href');
+  
+    $('html, body').animate({
+    scrollTop: $($link).offset().top 
+  }, 800 );
+  });
+    
+    
+    
+    
+    
+    
+   $('#hamburger').click(function(){
+		$(this).toggleClass('open');
+        $("nav ul li").toggleClass('hiddenMenu');
+        
+	});
+ 
     var newPhoto = new Image(); 
     newPhoto.src="images/kopniecie.jpg";
     var oldPhoto = $('#swapRafal').attr('src');
@@ -58,14 +107,14 @@ $(document).ready(function(){
     });
    
     //Galeria dzieci
-    $('.gallery img').each(function(i) {
+    $('.group img').each(function(i) {
 	var imgFile = $(this).attr('src');
 	var preloadImage = new Image();
 		
     });
 	
    
-   $('.kidsGallery a').click(function(evt){
+   $('.kids a').click(function(evt){
     
       evt.preventDefault();
       var imgPath = $(this).attr('href');
@@ -73,19 +122,19 @@ $(document).ready(function(){
       var newImage = $('<img src="' + imgPath +'">');
       newImage.hide();
       $('#photo').prepend(newImage);
-      newImage.fadeIn(1000);
-      oldImage.fadeOut(1000, function() {
+      newImage.fadeIn(100);
+      oldImage.slideDown(100, function() {
           $(this).remove();
       });
     });
     
-    $('.kidsGallery a:first').click();
+    $('.kids a:first').click();
     
     
      // galeria dorośli
        
   
-      $('.adultsGallery a').click(function(evt){
+      $('.adults a').click(function(evt){
     
       evt.preventDefault();
       var imgPath = $(this).attr('href');
@@ -93,17 +142,17 @@ $(document).ready(function(){
       var newImage = $('<img src="' + imgPath +'">');
       newImage.hide();
       $('#photo2').prepend(newImage);
-      newImage.fadeIn(1000);
-      oldImage.fadeOut(1000, function() {
+      newImage.fadeIn(100);
+      oldImage.slideDown(100, function() {
           $(this).remove();
       });
     });
     
-    $('.adultsGallery a:first').click();
+    $('.adults a:first').click();
     
     // galeria Staże i obozy
     
-     $('.stagesGallery a').click(function(evt){
+     $('.stages a').click(function(evt){
     
       evt.preventDefault();
       var imgPath = $(this).attr('href');
@@ -111,18 +160,18 @@ $(document).ready(function(){
       var newImage = $('<img src="' + imgPath +'">');
       newImage.hide();
       $('#photo3').prepend(newImage);
-      newImage.fadeIn(1000);
-      oldImage.fadeOut(1000, function() {
+      newImage.fadeIn(100);
+      oldImage.slideDown(100, function() {
           $(this).remove();
       });
     });
     
-    $('.stagesGallery a:first').click();
+    $('.stages a:first').click();
     
     
     // galeria Pokazy
     
-     $('.showsGallery a').click(function(evt){
+     $('.shows a').click(function(evt){
     
       evt.preventDefault();
       var imgPath = $(this).attr('href');
@@ -130,20 +179,22 @@ $(document).ready(function(){
       var newImage = $('<img src="' + imgPath +'">');
       newImage.hide();
       $('#photo4').prepend(newImage);
-      newImage.fadeIn(1000);
-      oldImage.fadeOut(1000, function() {
+      newImage.fadeIn(100);
+      oldImage.slideDown(100, function() {
           $(this).remove();
       });
     });
     
-    $('.showsGallery a:first').click();
+    $('.shows a:first').click();
     
     // powrót do okładek albumów
   $(".photos").find(".close").click(function(){
         
          $(this).addClass("hidden");
          $(".group").addClass("hidden");
-        
+        $('html, body').animate({
+    scrollTop: $("#photos").offset().top 
+  }, 800 );
          $(".cover").fadeIn();
     });   
    /* var image= $(".photos").find("img");
