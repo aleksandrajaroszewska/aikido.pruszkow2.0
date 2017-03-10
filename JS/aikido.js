@@ -52,7 +52,7 @@ $(window).scroll(function() {
 	});
  
     var newPhoto = new Image(); 
-    newPhoto.src="images/kopniecie.jpg";
+    newPhoto.src="../images/kopniecie.jpg";
     var oldPhoto = $('#swapRafal').attr('src');
     
       $("#swapRafal").hover( // funkcja podmieniająca zdjęcia
@@ -67,7 +67,7 @@ $(window).scroll(function() {
     });
     
      var olaPhoto = new Image();
-    olaPhoto.src="images/Ola2.jpg";
+    olaPhoto.src="../images/Ola2.jpg";
     var oldPhoto2 = $('#swapOla').attr('src');
     
       $("#swapOla").hover(
