@@ -1,22 +1,5 @@
-
-
-
-
-
 $(document).ready(function(){
-    
-    /*var  mn = $("#menu");
-    mns = "main-nav-scrolled";
-    hdr = 0;
-
-$(window).scroll(function() {
-  if( $(this).scrollTop() > hdr ) {
-    mn.addClass(mns);
-  } else {
-    mn.removeClass(mns);
-  }
-});*/
-    
+     
    function stickyMenu(){
      var nav = $("#menu");
      var navOffsetFromTop = nav.position().top;
@@ -39,12 +22,7 @@ $(window).scroll(function() {
     scrollTop: $($link).offset().top 
   }, 800 );
   });
-    
-    
-    
-    
-    
-    
+     
    $('#hamburger').click(function(){
 		$(this).toggleClass('open');
         $("nav ul li").toggleClass('hiddenMenu');
@@ -54,7 +32,6 @@ $(window).scroll(function() {
     var newPhoto = new Image(); 
     newPhoto.src="../images/kopniecie.jpg";
     var oldPhoto = $('#swapRafal').attr('src');
-    
       $("#swapRafal").hover( // funkcja podmieniająca zdjęcia
           
           function(){
@@ -197,36 +174,5 @@ $(window).scroll(function() {
   }, 800 );
          $(".cover").fadeIn();
     });   
-   /* var image= $(".photos").find("img");
-  
-    
-    
-    $(image).addClass("hidden");
-    
-    $(".group").click(function(){
-        $(".cover").fadeOut();
-        $(this).find("img").removeClass("hidden");
-        $(".photos").find(".close").removeClass("hidden");
-        
-                 
-    });
-    
-    $(".photos").find(".close").click(function(){
-        
-         $(this).addClass("hidden");
-         $(".group").find("img").addClass("hidden");
-        
-         $(".cover").fadeIn();
-    });
-    
-    
-    $(image).click(function(){
-        $(this).toggleClass("big");
-        
-        
-    });*/
-    
    
-    
-    
 }); 
